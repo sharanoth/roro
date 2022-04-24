@@ -1,9 +1,51 @@
-body {
-  background-image: url("./bg.jpg");
-  background-repeat: repeat;
+@font-face {
+  font-family: fatncute;
+  src: url(./FranxurterTotallyFat-X3G4Z.ttf);
 }
 
+body{
+  height: 100%;
+}
+
+.background {
+  position:absolute;
+  top:0;
+  left:0;
+  background-image: url("./bg.jpg");
+  background-repeat: repeat;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  opacity: 0.2;
+  
+  
+}
+.noise{
+  position:absolute;
+  top:0;
+  left:0;
+  z-index: -1;
+  mix-blend-mode:overlay;
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+  background-repeat: repeat;
+  background-image: url("./noise.svg");
+  
+}
+
+
 h1 {
-  color: red;
-  margin-left: 20px;
+  margin-top: 34px;
+  font-family: fatncute;
+  z-index: 100;
+  font-size:72px;
+  color: aliceblue;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  text-align: center;
+  text-decoration:underline ;
+  mix-blend-mode:hard-light ;
+  opacity: 0.75;
 }
